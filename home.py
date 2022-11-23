@@ -9,6 +9,6 @@ st.set_page_config(
 )
 
 # Create a page header
-st.header("Welcome to my homepage! 👋")
+st.header("Welcome to the homepage! 👋")
 
 st.write('<a href="/Titanic">Interact with my ML algorithm.</a>', unsafe_allow_html=True)
