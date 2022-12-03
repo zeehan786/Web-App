@@ -37,7 +37,7 @@ st.set_page_config(
 rad = st.sidebar.radio("Navigation", ["Home", "Data Visualization", "About Us"])
 
 if rad == "Home":
-    st.header("Welcome to our Afirline Data Visualization Homepage! 👋")
+    st.header("Welcome to our Airline Data Visualization Homepage! 👋")
 
 elif rad == "Data Visualization":
     tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(["Visualization 1", "Visualization 2", "Visualization 3",
