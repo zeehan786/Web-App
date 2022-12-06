@@ -58,7 +58,7 @@ elif rad == "Data Visualization":
         st.image('images/V2-Pie.png')
 
     with tab3:
-        st.header("Which state has the highest count of flight departures/arrivals?")
+        st.header("Which state has the highest average market fare?")
         HtmlFile = open("images/V3-Map.html", 'r', encoding='utf-8')
         source_code = HtmlFile.read() 
         # print(source_code)
