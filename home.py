@@ -52,11 +52,6 @@ elif rad == "Data Visualization":
         st.write("Work in Progress, please come back later")
 
     with tab3:
-        st.header("Which state has the highest count of flight departures/arrivals?")
-        HtmlFile = open("map.html", 'r', encoding='utf-8')
-        source_code = HtmlFile.read() 
-        # print(source_code)
-        components.html(source_code, height = 450)
     
     with tab4:
         st.header("Ideal time to book a fare?")
