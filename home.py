@@ -52,7 +52,7 @@ elif rad == "Data Visualization":
         st.write("Work in Progress, please come back later")
 
     with tab3:
-    
+        
     with tab4:
         st.header("Ideal time to book a fare?")
         st.write("Work in Progress, please come back later")
