@@ -43,46 +43,17 @@ if rad == "Home":
     st.subheader("For our project we will be using a dataset that is derived from the Bureau of Transportation Statistics that tracks airplane flights in the United States from 2019, 2020, 2021, and 2022. We will be visualizing how flights have changed throughout these years, the activities of domestic flights throughout the USA, and the effect of covid 19 on air travel.")
 
 elif rad == "Data Visualization":
-    tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(["Visualization 1", "Visualization 2", "Visualization 3",
-                                                         "Visualization 4", "Visualization 5", "Visualization 6", "Visualization 7"])
+    tab1, tab2, tab3, tab4, tab5, tab6, = st.tabs(["Visualization 1", "Visualization 2", "Visualization 3",
+                                                         "Visualization 4", "Visualization 5", "Visualization 6"])
     
     with tab1:
-        st.header("Domestic Airlines trend during covid-19")
-        st.image('images/V1_4.png', width=210)
-        st.image('images/V1-Price.png')        
-        st.image('images/V1-Miles.png')
-    
-    with tab2:
-        st.header("Factors that plays a crucial role in airline tickets")
-        st.image('images/V2-Bar.png')
-        st.image('images/V2-Pie.png')
-
-    with tab3:
-        st.header("Which state has the highest average market fare?")
+        st.header("Which state has the highest market fare?")
         HtmlFile = open("images/V3-Map.html", 'r', encoding='utf-8')
         source_code = HtmlFile.read() 
         # print(source_code)
         components.html(source_code, height = 450)
-        
     
-    with tab4:
-        st.header("Ideal time to book a fare?")
-        st.image('images/V1_4.png', width=210)
-        st.image('images/V4-Ideal_time.png')        
-    
-    with tab5:
-        st.header("Which airline company has the highest fare ticket price?")
-        st.image('images/V5_6.png', width=810)
-        st.image('images/V5-Airline_price.png')
-        
-    
-    with tab6:
-        st.header("America's Favorite Airline")
-        st.image('images/V5_6.png', width=810)
-        st.image('images/V6-AmericaFav.png')
-        
-    
-    with tab7:
+    with tab2:
         st.header("Which state has the highest airline miles? (Destination/Arrival)")
         HtmlFile2 = open("images/V7-Arr.html", 'r', encoding='utf-8')
         source_code2 = HtmlFile2.read()
@@ -91,6 +62,36 @@ elif rad == "Data Visualization":
         HtmlFile3 = open("images/V7-Dep.html", 'r', encoding='utf-8')
         source_code3 = HtmlFile3.read()
         components.html(source_code3, height = 450)
+
+       
+
+    with tab3:
+        st.header("Domestic Airlines trend during covid-19")
+        st.image('images/V1_4.png', width=210)
+        st.image('images/V1-Price.png')        
+        st.image('images/V1-Miles.png')
+        
+    
+    with tab4:
+        st.header("Which airline company has the highest fare ticket price?")
+        st.image('images/V5_6.png', width=810)
+        st.image('images/V5-Airline_price.png')
+        # st.header("Ideal time to book a fare?")
+        # st.image('images/V1_4.png', width=210)
+        # st.image('images/V4-Ideal_time.png')      
+          
+    
+    with tab5:
+        st.header("America's Favorite Airline")
+        st.image('images/V5_6.png', width=810)
+        st.image('images/V6-AmericaFav.png')
+
+        
+    
+    with tab6:
+        st.header("Factors that plays a crucial role in airline tickets")
+        st.image('images/V2-Pie.png')
+ 
 
 elif rad == "About Us":
     st.header("About Us")
