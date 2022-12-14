@@ -69,7 +69,7 @@ elif rad == "Data Visualization":
         st.header("Domestic Airlines trend during covid-19")
         st.image('images/V1_4.png', width=210)
         st.image('images/V1-Price.png')        
-        st.image('images/V1-Miles.png')
+        #st.image('images/V1-Miles.png')
         
     
     with tab4:
