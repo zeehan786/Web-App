@@ -1,2 +1,2 @@
 # Web-App
-Web App for Airline Price Prediction Model
+Web App for Airline Data Visualization
